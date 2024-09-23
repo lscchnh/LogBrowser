@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LogBrowser": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\louis\\source\\repos\\Dotnet-Backend-Skeleton\\Backend-Skeleton\\src logs.md"
+    }
+  }
+}
