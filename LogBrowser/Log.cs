@@ -1,8 +1,18 @@
-﻿namespace LogBrowser
+namespace LogBrowser;
+
+/// <summary>
+/// Log levels from both Microsoft.Extensions.Logging and Serilog, ordered by severity.
+/// </summary>
+public enum LogLevel
 {
-    public class Log
-    {
-        public string LogLevel { get; set; }
-        public string LogContent { get; set; }
-    }
+    Trace,
+    Verbose,
+    Debug,
+    Information,
+    Warning,
+    Error,
+    Critical,
+    Fatal
 }
+
+public sealed record Log(LogLevel Level, string Message);
